@@ -1,0 +1,16 @@
+{
+  "name": "iptv-validated",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lista diaria de canales de iptv-org con los streams validados",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=16.20"
+  },
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "validate": "node src/cli.mjs --out data",
+    "verify": "node scripts/verify.mjs --dir data"
+  }
+}
